@@ -12,7 +12,7 @@ RUN apt-get update \
   neofetch \
   neovim \
   bat \
-  ripgrep \
+#  ripgrep \
   fd-find \
   asciinema \
   tmux \
@@ -20,7 +20,7 @@ RUN apt-get update \
   cowsay \
   figlet \
   fortune \
-  hollywood \
+#  hollywood \
   toilet \
   tty-clock \
   wget
