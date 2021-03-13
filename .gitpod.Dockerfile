@@ -6,24 +6,73 @@ USER root
 RUN apt-get update \
  && apt-get install -y \
   apt-utils \
+  aria2 \
+  clang-format \
+  cppcheck \
+  doctest-dev \
+  kcachegrind-converters \
+  kcahcegrind \
+  lcov \
+  libbenchmark-dev \
+  libboost-all-dev \
+  libfmt-dev \
+  libjsoncpp-dev \
+  libopenblas-dev \
+  librange-v3-dev \
+  libspdlog-dev \
+  ninja-build \
+# latex
+  chktex \
+  latexdiff \
+  latexmk \
+  texlive-latex-extra \
+  texlive-science \
+  texlive-xetex \
+  texlive \
+# utilities (not ripgrep, gh)
+  asciinema \
+  bat \
+  byobu \
+  curl \
+  elinks \
+  fd-find \
   fish \
-  ranger \
+  mdp \
   ncdu \
   neofetch \
   neovim \
-  bat \
-#  ripgrep \
-  fd-find \
-  asciinema \
-  tmux \
+  patat \
+  pkg-config \
+  ranger \
   w3m \
+# just for fun (not cmatrix)
   cowsay \
   figlet \
   fortune \
-#  hollywood \
   toilet \
   tty-clock \
-  wget
+# eda stuff
+  bison \
+  build-essential \
+  flex \
+  gawk \
+  tcl-dev \
+  xdot \
+  graphviz \
+  mercurial \
+  qt5-default \
+  gtkwave \
+  yosys \
+  iverilog \
+  berkeley-abc \
+  arachne-pnr \
+  fpga-icestorm \
+  verilator \
+  libeigen3-dev \
+  libffi-dev \
+  libftdi-dev \
+  libscotchmetis-dev \
+  libreadline-dev \
 
 RUN mkdir -p /workspace/data \
     && chown -R gitpod:gitpod /workspace/data
@@ -41,17 +90,38 @@ RUN /opt/conda/bin/conda config --set always_yes yes --set changeps1 no \
     && /opt/conda/bin/conda update -q conda \
     && /opt/conda/bin/conda info -a
 
-RUN /opt/conda/bin/conda install -y \
-    ninja
-
 RUN /opt/conda/bin/conda install -y -c conda-forge \
-    benchmark \
-    boost \
-    fmt \
-    lapack \
-    openblas \
-    spdlog \
-    cppcheck
+    pandoc-crossref \
+    pandoc \
+    xtensor-fftw \
+    xtensor-blas \
+    xtensor 
+
+RUN /opt/conda/bin/pip install \
+    codecov \
+    coverage \
+    coveralls \
+    cppclean \
+    cvxpy \
+    jupyter \
+    lolcat \
+    matplotlib \
+    networkx \
+    numexpr \
+    numpy \
+    scipy \
+    flake8 \
+    mypy \
+    pre-commit \
+    pyprof2calltree \
+    pyqt5 \
+    pytest-benchmark \
+    pytest-cov \
+    pytest \
+    yapf \
+    cocotb \
+    myhdl \
+    pyfda \
 
 RUN chown -R gitpod:gitpod /opt/conda \
     && chmod -R 777 /opt/conda \

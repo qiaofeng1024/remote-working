@@ -1,0 +1,33 @@
+Package                Version                         Location
+---------------------- ------------------------------- -------------------------------------------------------------
+cocotb                 1.4.0
+codecov                2.1.11
+coverage               5.3
+coveralls              3.0.0
+cppclean               0.13
+cvxpy                  1.1.11
+flake8                 3.8.4
+jupyter                1.0.0
+lolcat                 1.4
+matplotlib             3.3.2
+myhdl                  0.11
+mypy                   0.790
+networkx               2.5
+numexpr                2.7.2
+numpy                  1.20.1
+Pillow                 7.2.0
+pip                    21.0.1
+pre-commit             2.7.1
+pyfda                  0.5.3
+pylint                 2.6.0
+[ ] pyprof2calltree        1.4.5
+PyQt5                  5.15.1
+PyScaffold             3.3
+pytest                 6.0.2
+pytest-benchmark       3.2.3
+pytest-cov             2.10.1
+scipy                  1.6.1
+trash-cli              0.20.12.26
+wheel                  0.36.2
+yapf                   0.30.0
+youtube-dl             2021.2.4.1
