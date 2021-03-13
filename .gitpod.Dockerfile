@@ -11,7 +11,7 @@ RUN apt-get update \
   cppcheck \
   doctest-dev \
   kcachegrind-converters \
-  kcahcegrind \
+  kcachegrind \
   lcov \
   libbenchmark-dev \
   libboost-all-dev \
