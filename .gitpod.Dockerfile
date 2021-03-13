@@ -21,7 +21,7 @@ RUN apt-get update \
   librange-v3-dev \
   libspdlog-dev \
   ninja-build \
-# latex
+# latex \
   chktex \
   latexdiff \
   latexmk \
@@ -29,7 +29,7 @@ RUN apt-get update \
   texlive-science \
   texlive-xetex \
   texlive \
-# utilities (not ripgrep, gh)
+# utilities (not ripgrep, gh) \
   asciinema \
   bat \
   byobu \
@@ -45,13 +45,13 @@ RUN apt-get update \
   pkg-config \
   ranger \
   w3m \
-# just for fun (not cmatrix)
+# just for fun (not cmatrix) \
   cowsay \
   figlet \
   fortune \
   toilet \
   tty-clock \
-# eda stuff
+# eda stuff \
   bison \
   build-essential \
   flex \
@@ -72,7 +72,7 @@ RUN apt-get update \
   libffi-dev \
   libftdi-dev \
   libscotchmetis-dev \
-  libreadline-dev \
+  libreadline-dev
 
 RUN mkdir -p /workspace/data \
     && chown -R gitpod:gitpod /workspace/data
@@ -121,7 +121,7 @@ RUN /opt/conda/bin/pip install \
     yapf \
     cocotb \
     myhdl \
-    pyfda \
+    pyfda
 
 RUN chown -R gitpod:gitpod /opt/conda \
     && chmod -R 777 /opt/conda \
